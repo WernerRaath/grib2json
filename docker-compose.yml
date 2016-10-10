@@ -6,7 +6,7 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-          - ./:/usr/src/app
-          - ./m2_cache:/home/temp/.m2
+          - .:/usr/src/app
+          - ./docker-entrypoint.sh:/docker-entrypoint.sh
         working_dir: /usr/src/app
-        entrypoint: ./docker-entrypoint.sh
+        entrypoint: /docker-entrypoint.sh

@@ -12,7 +12,7 @@ Installation
 ```
 git clone <this project>
 docker-compose build grib2json
-docker-compose run grib2json ./build
+docker-compose run --rm grib2json ./build
 ```
 
 Usage
@@ -22,7 +22,7 @@ Usage
     - Use docker to run grib2json (No local java dependencies required)    
     **Note that using the docker to run grib2json requires the output to be saved in `/usr/src/app/output` **
     ```
-    docker-compose run grib2json grib2json <some_command>
+    docker-compose run --rm grib2json grib2json <some_command>
     ```
     - Or use provided executable (Local java dependencies required)
     ```
