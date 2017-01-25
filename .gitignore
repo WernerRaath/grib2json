@@ -3,5 +3,5 @@ node_modules
 target
 scratch
 *.iml
-compiled/*
+compiled/grib2json/*
 m2_cache/*
